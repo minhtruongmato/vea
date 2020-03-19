@@ -1,0 +1,100 @@
+/*
+========================================================================
+IMPORT FONTS
+========================================================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800&display=swap&subset=latin-ext,vietnamese');
+
+/*
+========================================================================
+REBOOT STYLE
+========================================================================
+*/
+
+// COLORS
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-primary: #00AEEF;
+$color-secondary: #39B34A;
+
+$color-success: #00A65A;
+$color-warning: #E0A800;
+$color-danger: #C82333;
+
+$color-link: #007DFF;
+
+:root {
+    --primary: #{$color-primary};
+    --secondary: #{$color-secondary};
+
+    --black: #{$color-black};
+    --white: #{$color-white};
+
+    --success: #{$color-success};
+    --warning: #{$color-warning};
+    --danger: #{$color-danger};
+
+    --link: #{$color-link};
+
+    --bg-bw: #{$color-white};
+    --bg-main: #f2f2f2;
+    --bg-submain: #e5e5e5;
+
+    --border: #3a3a3a;
+
+    --text-title: #1c1c1c;
+    --text-subtitle: #484848;
+    --text-paragraph: #636363;
+
+    --btn-default: #e5e5e5;
+    --btn-default-hover: #f2f2f2;
+}
+
+.theme-dark {
+    --bg-bw: #{$color-black};
+    --bg-main: #1c1c1c;
+    --bg-submain: #080101;
+
+    --border: #d1d1d1;
+
+    --text-title: #f2f2f2;
+    --text-subtitle: #c7c7c7;
+    --text-paragraph: #aeaeae;
+
+    --btn-default: #080101;
+    --btn-default-hover: #1c1c1c;
+}
+
+:root {
+    --primary: #{$color-primary};
+    --secondary: #{$color-secondary};
+}
+
+// TYPE
+h1,h2,h3,h4,h5{
+    font-weight: 800;
+}
+
+h6{
+    font-weight: 600;
+    
+    &.subtitle-md,
+    &.subtitle-sm {
+        font-weight: 600;
+    }
+    
+}
+
+p{
+    font-weight: 400;
+}
+
+// PADDING COL
+[class^="col"],
+[class^="col-"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+

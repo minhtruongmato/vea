@@ -1,0 +1,62 @@
+#homepage{
+    .section{
+        width: 100%;
+        height: 100vh;
+
+        &.section-about{
+            .container{
+                height: 100%;
+
+                @include d-flex(column, center, normal);
+
+                .row{
+                    &.about-subjects{
+                        margin-top: 2rem;
+                        
+                        .item{
+                            .inner{
+                                width: 150px;
+                                height: 150px;
+
+                                background-color: $color-white;
+
+                                @include borderRadius(0.25rem);
+                                @include boxShadowDf();
+
+                                @include transition(300ms);
+
+                                &:hover{
+                                    background-color: $color-secondary;
+
+                                    @include boxShadowLg();
+                                    @include scale(1.1, 1.1);
+
+                                    @include transition(300ms);
+
+                                    a{
+                                        h6, i{
+                                            color: $color-white;
+                                        }
+                                    }
+                                }
+
+                                a{
+                                    width: 100%;
+                                    height: 100%;
+
+                                    padding: 1rem;
+
+                                    @include d-flex(column, space-between, flex-start);
+
+                                    i{
+                                        color: var(--text-title);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

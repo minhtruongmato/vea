@@ -1,0 +1,31 @@
+.nav-header{
+    height: 80px;
+
+    background-color: transparentize($color-white, 0.85);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+
+    border-bottom: 2px solid $color-white;
+
+    backdrop-filter: blur(0.25rem);
+
+    .nav-brand{
+
+    }
+
+    .nav-menu{
+        height: 100%;
+
+        a{
+            color: $color-white;
+
+            &.nav-active{
+                color: $color-white;
+                border-bottom-color: $color-white;
+            }
+        }
+    }
+}

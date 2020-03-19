@@ -1,0 +1,23 @@
+/*
+========================================================================
+IMPORT FILES
+========================================================================
+*/
+
+@import 'config/config';
+@import 'config/main';
+@import 'config/mixin';
+
+/*
+========================================================================
+IMPORT PAGES
+========================================================================
+*/
+
+@import 'pages/header';
+@import 'pages/footer';
+@import 'pages/homepage';
+
+body, html{
+    font-family: 'Nunito Sans', sans-serif;
+}
